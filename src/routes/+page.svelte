@@ -1,5 +1,8 @@
-<script>
-	let range = Array(20);
+<script lang="ts">
+	import type { PageData } from './$types';
+
+	export let data: PageData;
+	console.log(data);
 </script>
 
 <div class="navbar bg-base-100 flex justify-center">
@@ -10,12 +13,12 @@
 <div class="divider " />
 
 <div class="m-6 flex flex-wrap image-full">
-	{#each range as _}
+	{#each data.images as image}
 		<!-- <div class="carousel-item">
 			<img class="w-72" src="/image.jpg" alt="test" />
 		</div> -->
 		<div class="card m-10 w-60 bg-base-100">
-			<figure><img class="" src="/image.jpg" alt="test" /></figure>
+			<figure><img class="" src="/{image.name}" alt="test" /></figure>
 			<!-- <div class="card-body"> -->
 			<button class="btn btn-primary border-radius-none">Download</button>
 			<!-- </div> -->

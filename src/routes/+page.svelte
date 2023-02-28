@@ -18,9 +18,13 @@
 			<img class="w-72" src="/image.jpg" alt="test" />
 		</div> -->
 		<div class="card m-10 w-60 bg-base-100">
-			<figure><img class="" src="/{image.name}" alt="test" /></figure>
+			<figure><img class="" src="/images/{image.name}" alt="test" /></figure>
 			<!-- <div class="card-body"> -->
-			<button class="btn btn-primary border-radius-none">Download</button>
+			<a
+				class="btn btn-primary border-radius-none"
+				download={image.name}
+				href="/images/{image.name}">Download</a
+			>
 			<!-- </div> -->
 		</div>
 	{/each}

@@ -37,11 +37,14 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@neodrag/svelte": "^2.0.3",
 		"@prisma/client": "4.10.1",
 		"@tailwindcss/typography": "^0.5.9",
+		"@types/uuid": "^9.0.1",
 		"argon2": "^0.30.3",
 		"daisyui": "^2.51.1",
 		"redis": "^4.6.5",
-		"svelte-french-toast": "^1.0.3"
+		"svelte-french-toast": "^1.0.3",
+		"uuid": "^9.0.0"
 	}
 }

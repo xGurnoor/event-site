@@ -13,7 +13,7 @@ datasource db {
 model Image {
   id       String @id @default(uuid())
   name     String
-  position Int    @unique @default(autoincrement())
+  position Int     @default(autoincrement())
 
   @@map("images")
 }
